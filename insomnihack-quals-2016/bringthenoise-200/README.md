@@ -1,13 +1,19 @@
 # INSOMNIHACK QUALIFIERS 2016 : Bring the Noise
 
 **Category:** Crypto
+
 **Points:** 200
+
 **Solves:**
 
 ## Description:
+
   > Quantum computers won't help you
+  
   > Source
+  
   > Running on: bringthenoise.insomnihack.ch:1111
+  
 
 ## Writeup:
   A quick look at the provided source code shows us that the flag will be printed upon meeting two conditions. First, 5 random bytes are provided, and we must create a string whose first 5 bytes match after being hashed using md5. Since 5 bytes is a very small size, it's very simple to brute force this and send it back to the server.
